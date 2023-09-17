@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Definir el esquema del modelo Casa
 const airbnbSchema = new mongoose.Schema({
   _id: String,
   listing_url: String,
