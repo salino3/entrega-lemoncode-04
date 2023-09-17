@@ -1,9 +1,9 @@
 const Airbnb = require("../models/airbnb");
 
 
-const getAllLimitTwo = async (req, res) => {
+const getAllLimitFive = async (req, res) => {
   try {
-    const propiedades = await Airbnb.find().limit(2);
+    const propiedades = await Airbnb.find().limit(5);
     return res.json(propiedades);
   } catch (error) {
     console.error("Error al obtener las propiedades de Airbnb", error);
@@ -44,5 +44,5 @@ console.log(houses)
 };
 
 
-module.exports = { getDetailProperty, getHousesByCountry, getAllLimitTwo };
+module.exports = { getDetailProperty, getHousesByCountry, getAllLimitFive };
 
